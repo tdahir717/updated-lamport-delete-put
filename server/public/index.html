@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="vendors/jquery-3.4.1.min.js"></script>
+  <script src="scripts/client.js"></script>
+  <link rel="stylesheet" href="styles/blues.css">
+  <title>PG Intro</title>
+</head>
+<body>
+  <header>
+    <h1>PG Intro</h1>
+  </header>
+  <h2>Add New Track</h2>
+  <form>
+    <label>Title:</label>
+    <input type="text" placeholder="track" id="in-track" size="50">
+    <label>Artist:</label>
+    <input type="text" placeholder="artist" id="in-artist" size="50">
+    <br />
+    <label>Published:</label>
+    <input type="date" id="in-published">
+    <label>Rank:</label>
+    <input type="number" placeholder="rank" id="in-rank" type="number" size="5">
+    <br />
+    <button id="btn-add-track">Add</button>
+  </form>
+  <h2>All Tracks</h2>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <td>Artist</td>
+          <td>Title</td>
+          <td>Published</td>
+          <td>Rank</td>
+        </tr>
+      </thead>
+      <tbody id="out-tracks">
+        <!-- jQuery will fill this in -->
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
